@@ -1,11 +1,15 @@
 import { Github, LinkedIn } from "../components/Icon";
+import unimal from "../unimal.png";
 
 const About = () => (
     <section
         id="about"
         className="min-h-screen flex flex-col justify-center space-y-8"
     >
+
         <div className="space-y-2">
+
+            <img src={unimal} alt="logo unimal" />
             <h1 className="text-4xl sm:text-5xl font-bold uppercase text-gray-800 sm:text-left mb-5 sm:mb-0">
                 Muhammad<span className="text-green-700"> Riansyah</span>
             </h1>
@@ -27,11 +31,16 @@ const About = () => (
             publishing software like Aldus PageMaker including versions of Lorem
             Ipsum.
         </p>
+
         <div className="space-x-3 flex">
             <LinkedIn />
             <Github />
         </div>
     </section>
 );
+
+
+
+
 
 export default About;
